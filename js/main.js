@@ -8,21 +8,28 @@ $(document).ready(function () {
   	$('#silver').hide();
   	$('#bronze').hide();
 
- 
-  	$('#dashboard').hide();
-	$('#options').hide();
+  	 $("#app-base").hide( "slow" );
+
 	$( "#dashboardButton" ).on( "click", function() {
 	    $( "#options" ).hide( "slow" );
 	   	$("#dashboard").show( "slow" );
+	   	$('#warning').hide();
+		$('#welcome').hide();
+  		$('#gold').hide();
+  		$('#silver').hide();
+  		$('#bronze').hide();
 	});
 	$( ".optionsButton" ).on( "click", function() {
+		 $("#app-base").show( "slow" );
 	    $( "#dashboard" ).hide( "slow" );
 	   	$("#options").show( "slow" );
+	   	$('#warning').hide();
+		$('#welcome').hide();
+  		$('#gold').hide();
+  		$('#silver').hide();
+  		$('#bronze').hide();
 	});
-		$( ".optionsButton" ).on( "click", function() {
-	    $( "#dashboard" ).hide( "slow" );
-	   	$("#options").show( "slow" );
-	});
+
 
 	$( ".nextScenario" ).on( "click", function() {
 		if(nextExample == 'welcome'){
@@ -61,8 +68,9 @@ $(document).ready(function () {
   			$('#bronze').show();
   			nextExample = 'welcome';
 		}
-	    $( "#options" ).hide( "slow" );
-	   	$("#dashboard").hide( "slow" );
+	    /*$( "#options" ).hide( "slow" );
+	   	$("#dashboard").hide( "slow" );*/
+	   	 $("#app-base").hide( "slow" );
 	});
 
 });
