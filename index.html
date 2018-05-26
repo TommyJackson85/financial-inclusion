@@ -14,50 +14,82 @@
 </head>
 <body id="home">
 <div class="container">
-<!--alerts--> 
 
-<div class="alert alert-warning alert-dismissible fade show" role="alert">
+<div id="welcome" class="alert alert-warning alert-dismissible fade show" role="alert">
   <img id="welcomeImg" src="images/smiley.png" alt="..." class="">
   <strong>Good Morning!</strong><br /> 
   You have 20$ in your budget today.<br />
-      <button type="submit" class="btn btn-primary">Check options</button>
+      <button type="submit" class="optionsButton btn btn-primary">Check options</button>
   <button type="button" class="close" data-dismiss="alert" aria-label="Close">
     <span aria-hidden="true">&times;</span>
   </button>
 </div>
-
-<div class="alert alert-warning alert-dismissible fade show" role="alert">
+<div id="warning" class="alert alert-warning alert-dismissible fade show" role="alert">
  <img id="warningImg" src="images/skelleton2.png" alt="..." class="">
   <strong>Wait!</strong><br />
   You could be spending your money somewhere else.<br />
-    <button type="submit" class="btn btn-primary">Check options</button>
+    <button type="submit" class="optionsButton btn btn-primary">Check options</button>
   <button type="button" class="close" data-dismiss="alert" aria-label="Close">
     <span aria-hidden="true">&times;</span>
   </button>
 </div>
-<div class="alert alert-warning alert-dismissible fade show" role="alert">
- <img id="warningImg" src="images/skelleton2.png" alt="..." class="">
-  <strong>Wait!</strong><br />
-  You could be spending your money somewhere else.<br />
-    <button type="submit" class="btn btn-primary">Check options</button>
-  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-    <span aria-hidden="true">&times;</span>
-  </button>
-</div>
-<div class="alert alert-warning alert-dismissible fade show" role="alert">
+<div id="gold" class="optioalert alert-warning alert-dismissible fade show" role="alert">
  <img id="goldImg" src="images/gold.png" alt="..." class="">
   <strong>Congratulations!</strong><br />
   You have earned a Gold badge.<br />
-    <button type="submit" class="btn btn-primary">Check options</button>
+    <button type="submit" class="optionsButton btn btn-primary">Check options</button>
   <button type="button" class="close" data-dismiss="alert" aria-label="Close">
     <span aria-hidden="true">&times;</span>
   </button>
 </div>
-<hr />
-<div id="dashboard">
-<div id="profile">
-<img id="profileImg" src="images/gold.png" alt="..." class="">  
+<div id="silver" class="optioalert alert-warning alert-dismissible fade show" role="alert">
+ <img id="silverImg" src="images/silver.jpg" alt="..." class="">
+  <strong>Congratulations!</strong><br />
+  You have earned a Silver badge.<br />
+    <button type="submit" class="optionsButton btn btn-primary">Check options</button>
+  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+    <span aria-hidden="true">&times;</span>
+  </button>
 </div>
+<div id="bronze" class="optioalert alert-warning alert-dismissible fade show" role="alert">
+ <img id="bronzeImg" src="images/bronze.png" alt="..." class="">
+  <strong>Congratulations!</strong><br />
+  You have earned a Bronze badge.<br />
+    <button type="submit" class="optionsButton btn btn-primary">Check options</button>
+  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+<div id="app-base" class="row">
+  <div id="options" class="options col-12">
+    <ul class="col-12 list-group">
+      <li class="list-group-item">Game of Pool</li>
+      <li class="list-group-item">Roller Blading</li>
+      <li class="list-group-item">Go to the park</li>
+    </ul>
+  </div>
+  <div id="dashboard" class="options col-12">
+    <div id="header" class="col-12">
+      <img id="profileImg" src="images/profilePicture.png" alt="..." class="">
+      <h1>Firstname Secondname</h1>
+    </div>
+    <ul class="col-12 list-group">
+      <li class="list-group-item"><strong>Friends Progress</strong></li>
+      <li class="list-group-item">Sarah saved 5$</li>
+      <li class="list-group-item">Mary lost 20$</li>
+      <li class="list-group-item">Jane saved 15$</li>
+    </ul>
+  </div>
+  <div id="bottomButtons" class="col-12 bottomButtons">
+    <div class="row">
+      <button id="optionsButton" type="submit" class="optionsButton col-6 btn btn-primary">Options</button>
+      <button id="dashboardButton" type="submit" class="col-6 btn btn-primary">Dashboard</button>
+    </div>
+  </div>
+</div>
+<hr />
+<button type="submit" class="nextScenario col-6 btn btn-primary">Next Scenario</button>
+
 
 
 <!--  <div class="form-group row">
@@ -150,13 +182,18 @@
     </div>
   </div>
 </div>-->
-<script src="js/main.js"></script>
+
 <!--<script src="build/main.bundle.js"></script>-->
 <!--<script src="js/jQuery.js"></script>-->
 
+
+<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>-->
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<!--<script src="js/main.js"></script>-->
+<script src="build/main.bundle.js"></script>
+
 <!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>-->
  <!--<script src="js/bootstrap.js"></script> 
   <script src="js/bootstrap.min.js"></script> -->

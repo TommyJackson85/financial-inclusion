@@ -1,6 +1,15 @@
-#welcomeImg, #warningImg, #awardImg {
+#app-base{
+	background: red;
+}
+#welcomeImg, #warningImg, #goldImg, #silverImg, #bronzeImg, #profileImg {
     width: 100px;
+}
+#profileImg{
+	padding-top: 15px;
 }
 .alert{
     padding:20px;
+}
+#options{
+	height:400px;
 }
