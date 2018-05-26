@@ -6,37 +6,160 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!--<link href='http://fonts.googleapis.com/css?family=Roboto:400,300,700' rel='stylesheet' type='text/css'>-->
     <link href="css/styles.css" rel="stylesheet" type="text/css">
-    <!--<link href="css/bootstrap-theme.css.map" rel="stylesheet" media="screen">-->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!--<link href="css/bootstrap-theme.css.map" rel="stylesheet" media="screen">
+    <link href="css/bootstrap.min.css" rel="stylesheet">-->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
 
 
 </head>
-<body>
+<body id="home">
+<div class="container">
+<!--alerts--> 
 
-<body id="home" data-spy="scroll" data-target="#navbar" data-offset="50">
-  <div class="col-xs-12 col-md-6">
-  <form>
-  <div class="form-group">
-    <label for="exampleInputEmail1">Email address</label>
-    <input type="" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-  </div>
-  <div class="form-group">
-    <label for="exampleInputPassword1">Password</label>
-    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-  </div>
-  <div class="form-check">
-    <input type="checkbox" class="form-check-input" id="exampleCheck1">
-    <label class="form-check-label" for="exampleCheck1">Check me out</label>
-  </div>
-  <button type="submit" class="btn btn-primary">Submit</button>
-</form>
+<div class="alert alert-warning alert-dismissible fade show" role="alert">
+  <img id="welcomeImg" src="images/smiley.png" alt="..." class="">
+  <strong>Good Morning!</strong><br /> 
+  You have 20$ in your budget today.<br />
+      <button type="submit" class="btn btn-primary">Check options</button>
+  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+    <span aria-hidden="true">&times;</span>
+  </button>
 </div>
-<!--<script src="js/main.js"></script>-->
-<script src="build/main.bundle.js"></script>
-<script src="js/jQuery.js"></script>
- <script src="js/bootstrap.js"></script> 
-  <script src="js/bootstrap.min.js"></script> 
+
+<div class="alert alert-warning alert-dismissible fade show" role="alert">
+ <img id="warningImg" src="images/skelleton2.png" alt="..." class="">
+  <strong>Wait!</strong><br />
+  You could be spending your money somewhere else.<br />
+    <button type="submit" class="btn btn-primary">Check options</button>
+  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+<div class="alert alert-warning alert-dismissible fade show" role="alert">
+ <img id="warningImg" src="images/skelleton2.png" alt="..." class="">
+  <strong>Wait!</strong><br />
+  You could be spending your money somewhere else.<br />
+    <button type="submit" class="btn btn-primary">Check options</button>
+  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+<div class="alert alert-warning alert-dismissible fade show" role="alert">
+ <img id="goldImg" src="images/gold.png" alt="..." class="">
+  <strong>Congratulations!</strong><br />
+  You have earned a Gold badge.<br />
+    <button type="submit" class="btn btn-primary">Check options</button>
+  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+<hr />
+<div id="dashboard">
+<div id="profile">
+<img id="profileImg" src="images/gold.png" alt="..." class="">  
+</div>
+
+
+<!--  <div class="form-group row">
+    <label for="example-text-input" class="col-6 col-form-label">Name</label>
+    <div class="col-10">
+      <input class="form-control" type="text" value="Enter full name" id="example-text-input">
+    </div>
+  </div>
+  <div class="form-group row">
+    <label for="example-email-input" class="col-6 col-form-label">Email</label>
+    <div class="col-10">
+      <input class="form-control" type="email" value="bootstrap@example.com" id="example-email-input">
+    </div>
+  </div>
+  <div class="form-group row">
+    <label for="example-tel-input" class="col-6 col-form-label">Telephone</label>
+    <div class="col-10">
+      <input class="form-control" type="tel" value="1-(555)-555-5555" id="example-tel-input">
+    </div>
+  </div>
+  <div class="form-group row">
+    <label for="example-password-input" class="col-6 col-form-label">Password</label>
+    <div class="col-10">
+      <input class="form-control" type="password" value="hunter2" id="example-password-input">
+    </div>
+  </div>
+  <div class="form-group row">
+    <label for="example-number-input" class="col-6 col-form-label">Number</label>
+    <div class="col-10">
+      <input class="form-control" type="number" value="42" id="example-number-input">
+    </div>
+  </div>
+  <div class="form-group row">
+    <label for="disabledSelect">Future plan</label>
+    <select id="disabledSelect" class="form-control">
+      <option>Start a college course</option>
+        <option>Go travelling</option>
+        <option>Buy a house</option>
+        <option>Buy a car</option>
+    </select>
+  </div>
+  <div class="form-group row">
+    <label for="example-number-input" class="col-6 col-form-label">Estimate Cost Budget(AUS Dollars)</label>
+    <div class="col-10">
+      <input class="form-control" type="number" value="42" id="example-number-input">
+    </div>
+  </div>
+
+  <div class="form-group row">
+    <label for="example-datetime-local-input" class="col-6 col-form-label">Estimate Date of plan</label>
+    <div class="col-10">
+      <input class="form-control" type="datetime-local" value="2011-08-19T13:45:00" id="example-datetime-local-input">
+    </div>
+  </div>
+
+  <div class="form-group row">
+    <label for="example-number-input" class="col-6 col-form-label">Monthly Earnings(AUS Dollars)</label>
+    <div class="col-10">
+      <input class="form-control" type="number" value="42" id="example-number-input">
+    </div>
+  </div>
+  <div class="form-group row">
+    <label for="example-number-input" class="col-6 col-form-label">Monthly Rent cost(AUS Dollars)</label>
+    <div class="col-10">
+      <input class="form-control" type="number" value="42" id="example-number-input">
+    </div>
+  </div>
+  <div class="form-group row">
+    <label for="example-number-input" class="col-6 col-form-label">Monthly Food expenditures(AUS Dollars)</label>
+    <div class="col-10">
+      <input class="form-control" type="number" value="42" id="example-number-input">
+    </div>
+  </div>
+  <div class="form-group row">
+    <label for="example-number-input" class="col-6 col-form-label">Other expenditures(AUS Dollars)</label>
+    <div class="col-10">
+      <input class="form-control" type="number" value="42" id="example-number-input">
+    </div>
+  </div>
+  <div class="form-group row">
+    <label for="example-number-input" class="col-6 col-form-label">How many times do you eat out?</label>
+    <div class="col-10">
+      <input class="form-control" type="number" value="42" id="example-number-input">
+    </div>
+  </div>
+  <div class="form-group row">
+    <label for="example-number-input" class="col-6 col-form-label">How much do you spend on drink per week?</label>
+    <div class="col-10">
+      <input class="form-control" type="number" value="42" id="example-number-input">
+    </div>
+  </div>
+</div>-->
+<script src="js/main.js"></script>
+<!--<script src="build/main.bundle.js"></script>-->
+<!--<script src="js/jQuery.js"></script>-->
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>-->
+ <!--<script src="js/bootstrap.js"></script> 
+  <script src="js/bootstrap.min.js"></script> -->
 
 </body>
 </html>
